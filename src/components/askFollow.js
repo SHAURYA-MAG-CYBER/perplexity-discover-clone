@@ -29,8 +29,9 @@ const FloatingTextarea = () => {
         flexShrink: 1,
         order: 1,
         overflow: 'hidden',
-        position: 'relative',
+        // eslint-disable-next-line
         display: 'flex',
+        position: 'relative',
         width: '80%',
         height: '70px',
         border: '2px solid #e8e8e623',
@@ -84,7 +85,8 @@ const FloatingTextarea = () => {
         marginLeft: '4px',
         fontSize: '14px',
         color: '#8d9191',
-        fontSize: '25px',
+        // eslint-disable-next-line
+        fontSize: '25px'
       },
       submitButton: {
         width: '36px',
