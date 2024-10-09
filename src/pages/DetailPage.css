@@ -1,0 +1,199 @@
+.detail-page {
+  background: #202222;
+  display:flex;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.article-display {
+  background-color: #1b191a;
+  border: 3px  solid rgba(67, 67, 67, 0.367);
+  width: calc(100% - 16px);
+  margin: 8px 8px 8px 0;
+  border-radius: 10px;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.article-content {
+  display: flex;
+}
+
+.article-content-text {
+  width: 80%;
+}
+
+.header-image img {
+  width: 90%;
+  height: 475px;
+}
+
+.page-content {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 20px 80px;
+}
+
+.page-head-details {
+  display: flex;
+  height: 65px;
+  width: 100%;
+  background-color: #181b1b;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #e8e8e6;
+  justify-content:flex-end;
+  align-items: center;
+  gap: 10px;
+  padding-right: 20px;
+  border-bottom: 3px  solid rgba(67, 67, 67, 0.367);
+}
+
+.topic-highlights-list {
+  list-style: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.topic-highlights-list li {
+  background: linear-gradient(to right, #e8e8e6 1px, transparent 1px) left center; /* Vertical line */
+  background-size: 2px 100%; /* Line width and height */
+  background-repeat: no-repeat; /* No repeat */
+  padding-left: 10px; /* Space for the line */
+  margin: 15px 0; /* Space between items */
+  color: #e8e8e6;
+  font-size: 20px;
+}
+
+.article-content-text {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.related-articles-header {
+  display: flex;
+  align-items: center;
+}
+
+.related-articles-header h2 {
+  margin-left: 15px;
+  color: #e8e8e6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-weight:500;
+  font-size: 22; 
+}
+
+.svg-inline {
+  height: 1em;
+}
+
+.related-article-card-even {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 15px;
+  transition: transform 0.3s;
+  color: #e8e8e6;
+}
+
+.related-article-card a:hover {
+  color: #29bccf;
+  transition: 0.3s;
+}
+
+.related-article-card-even a:hover {
+  color: #29bccf;
+  transition: 0.3s;
+}
+
+.related-article-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  padding: 15px;
+  transition: transform 0.3s;
+  color: #e8e8e6;
+}
+
+.read-more {
+  color: #e8e8e6;
+  text-decoration: none;
+}
+
+.keep-reading-card-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1px;
+  font-size: 12px;
+}
+.keep-reading-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 40%;
+}
+.keep-reading-card {
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 8px; /* Round corners */
+  margin: 10px; /* Space around cards */
+  padding: 5px;
+  width: calc(25% - 20px); /* 4 cards in a row, adjust width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.2s; /* Animation on hover */
+  font-size: 1em;
+  height: 300px;
+}
+.keep-reading-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.keep-reading h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.keep-reading {
+  padding: 20px;
+  background-color: #f9f9f9; /* Change to your preferred color */
+  margin-top: 20px;
+}
+
+.big-first-letter {
+  font-size: 22px; /* Set a normal font size for the paragraph */
+  line-height: 1.5; /* This will define the height of each row */
+  text-align: justify;
+  position: relative;
+}
+
+.big-first-letter::first-letter {
+  display: flex;
+  align-self: center;
+  font-size: 3em; /* Make the first letter bigger */
+  font-weight: bold;
+  float: left; /* Make the first letter float on the left */
+  line-height: 1.2; /* Ensure the letter takes the height of two rows */
+  margin-right: 8px; /* Spacing between big letter and the text */
+  margin-bottom: -0.3em; /* Slight adjustment to keep alignment */
+}
+
+.big-first-letter::after {
+  content: '';
+  display: block;
+  clear: left; /* Ensures that the third line starts below the large letter */
+  height: 0;
+}

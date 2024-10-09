@@ -1,0 +1,222 @@
+/* Sidebar.css */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .hidden {
+      display: block; /* Show sidebar on medium and larger screens */
+    }
+  }
+  
+  .sidebar {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    background-color: #202222;
+    width: 20vw;
+    height: 100vh;
+    float: left;
+  }
+
+  .sidebar-nav {
+    margin-top: 4px;
+  } 
+
+  .head-container {
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    height: 70px;
+    display: inline-flex;
+  }
+
+  .logo-brand {
+    width: 52.5px;
+    height: 50px;
+    margin: 0;
+    padding: 18px 0 18px 10px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .logo-brand-name {
+    height: fit-content;
+    font-size: 35px;
+    font-weight: normal;
+    color: #e8e8e8;
+    padding: 12px 0 24px;
+    align-content: center;
+    text-decoration: none;
+  }
+
+  .collapse-button-container {
+    display: flex;
+    width: 70px;
+    height: 40px;
+    padding: 10px 5px;
+    justify-content: center;
+    padding: 30px 0 15px;
+  }
+
+  .collapse-button {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    width: 30px;
+    background-color: #202222;
+    border: 0;
+    border-radius: 50%;
+    fill: #8a8b8b;
+  }
+
+  .collapse-button:hover {
+    background-color: #2d2f2f;
+    fill: #e8e8e8;
+    transition: fill 0.3s;
+  }
+
+  .new-thread-button-container {
+    width: 100%;
+  }
+
+  .new-thread-button {
+    width: 90%;
+    height: 50px;
+    background-color: #1b191a;
+    color: #6a6d6d;
+    font-size: x-large;
+    display: flex;
+    border: 2px solid #8a8b8b60;
+    border-radius: 30px;
+    padding: 10px 5px 8px 25px;
+    margin: 5px 16px 5px 16px;
+    justify-content: space-between;
+    transition: border 0.3s;
+  }
+
+  .new-thread-button:hover {
+    border: 2px solid #00ffff9e;
+    transition: border 0.3s;
+  }
+
+  .new-thread-button-command {
+    display: flex;
+    height: 25px;
+    width: auto;
+    padding: 5px;
+
+    
+  }
+  .new-thread-button-command p {
+    margin: 0 3px 3px 0;
+    padding: 2px 5px;
+    font-size: 15px;
+    border: 1px solid #8a8b8b60;
+    border-radius: 5px;
+  }
+
+  .nav-button-container {
+    margin: 50px 0;
+  }
+
+  .nav-button {
+    display: flex;
+    padding: 10px 20px 5px;
+    color: #8a8b8b;
+    font-size: 25px;
+    width: 95%;
+    height: 50px;
+    background-color: #202222;
+    border: 0;
+    gap: 10px;
+    margin: 10px 10px 0 10px;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  .nav-button:hover {
+    background-color: #2d2f2f;
+    transition: 0.3s;
+  }
+
+  .nav-button p {
+    margin:0;
+  }
+
+  .sign-up-button {
+    width: 90%;
+    height: 55px;
+    background-color: #29bccf;
+    color: #000;
+    font-size: x-large;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px 16px 5px 16px;
+    transition: border 0.3s;
+    transition: 0.3s;
+  }
+
+  .sign-up-button:hover {
+    background-color: #209bab93;
+    transition: 0.3s;
+  }
+
+  .link-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80%;
+    height: 8vh;
+    width: 100%;
+    border-top: 2px solid #8a8b8b60;
+  }
+
+  .download-butoon {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px;
+    width: 50%;
+    background-color: #202222;
+    border: 0;
+    color: #8a8b8b;
+    font-size: 20px;
+    padding: 6px 12px 6px 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+
+  .download-butoon:hover {
+    background-color: #2d2f2f;
+    transition: 0.3s;
+  }
+
+  .social-button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 10px;
+    width: 30%;
+  }
+
+  .link-buttons {
+    background-color: #202222;
+    border-radius: 50%;
+    height: 40px;
+    margin: 12px 0;
+    border: 0;
+    transition: 0.3s;
+  }
+
+  .link-buttons:hover {
+    background-color: #2d2f2f;
+    transition: 0.3s;
+  }

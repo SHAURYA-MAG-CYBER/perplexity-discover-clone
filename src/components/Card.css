@@ -1,0 +1,96 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #292829af; /* Add a background color for visibility */
+    width: 100%; /* Make sure the card takes full width inside the container */
+    color: white;
+}
+
+.card-image {
+    width: 100%; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+}
+
+.card-content {
+    padding: 50px;
+    background-color: #1b191baf;
+    color: white;
+}
+
+.card h2 {
+    padding-left: 30px;
+    margin-bottom: 5px;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 30px;
+}
+
+@media (max-width: 1000px) {
+    .card h2 {
+        font-size: 1.2em; /* Smaller title size */
+        padding: 0 15px;
+    }
+    .description {
+        font-size: 0.9em;
+        padding: 0 15px;
+    }
+}
+
+.bookmark-button {
+    width: 45px;
+    height: 45px;
+    background: none;
+    border-radius: 50%;
+    border-width: 0;
+    border-color: #292829af;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #292829af;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.bookmark-button:hover {
+    background-color: #eae7e825;
+    fill: #eae7e825;
+}
+
+.bookmark-button svg {
+    fill: #1b191baf;
+    ; /* Change the color of the icon */
+    
+    stroke: #938f90;
+    transition: stroke 0.3s;
+}
+
+.bookmark-button:hover svg {
+    stroke: #fff;
+    ; /* Darker color on hover */
+}
+
+.bottom-icons {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 40px;
+}
+
+.left-icon img{
+    position: 'absolute';
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+    width: 26px;
+    height: 16px;
+    margin-left: 10px;
+}
+

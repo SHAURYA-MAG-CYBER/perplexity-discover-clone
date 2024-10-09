@@ -1,0 +1,115 @@
+.discover-page {
+    background: #202222;
+    display:flex;
+    align-items: flex-start;
+    justify-items:auto;
+    width: 100%;
+}
+
+.article-feed {
+    background-color: #1b191a;
+    border: 3px  solid rgba(67, 67, 67, 0.367);
+    width: 100%;
+    margin: 8px 8px 8px 0;
+    border-radius: 15px;
+    height: auto;
+}
+
+.page-head {
+    display: inline-flex;
+    height: 90px;
+    width: 100%;
+    background-color: #181b1b;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #e8e8e6;
+    justify-content:flex-start;
+    border-bottom: 3px  solid rgba(67, 67, 67, 0.367);
+}
+
+.page-head h1 {
+    display: flex;
+    font-size: 40px;
+    margin: 0 18%;
+    width: 50vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: lighter;
+    padding: 20px 32px;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-tray {
+    display: flex;
+    padding: 15px 32px;
+    margin: 0 18%;
+    width: 50vw;
+    padding: 8px 32px;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.filter-button {
+    display: inline-flex;
+    padding: 16px;
+    background-color: #191a1a;
+    border: 0;
+    border-radius: 5px;
+    color: #e8e8e6;
+    width: auto;
+    font-size: 17px;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.preference-button {
+    background-color: #2d2d2f;
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    stroke: #e8e8e6;
+    padding: 15px 0;
+}
+
+.filter-button:hover {
+    color: #6f7070;
+    transition: 0.3s;
+}
+
+/* Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50vw; /* 50% of the screen width */
+    gap: 15px;
+    justify-content: center; /* Center the grid on the page */
+    padding: 0 32px 15px;
+    margin: 0 18%;
+}
+
+.large-card {
+    grid-column: 1 / -1;
+    height: 28vw;
+}
+
+
+.large-card img {
+    height: 17vw;
+}
+
+.small-card {
+    grid-column: auto;
+    height: 23vmax;
+}
+
+.small-card img {
+    height: 50%;
+}
+
+/* Media query to adjust layout for standard cards */
+@media (min-width: 767px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for standard cards */
+    }
+}
